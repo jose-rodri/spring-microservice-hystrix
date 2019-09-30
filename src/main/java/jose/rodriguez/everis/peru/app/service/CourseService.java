@@ -31,7 +31,7 @@ public class CourseService {
       return "NORMAL CALL Successful" + "Curses Details:  " + response;
 
   }
-
+  
   @SuppressWarnings("unused")
   private String callProductApplication_Fallback(){
 
@@ -137,7 +137,6 @@ public class CourseService {
   
   // students
   
- //-- parents
   
   @HystrixCommand(fallbackMethod = "callStudentApplication_Fallback")
   public String callStudentApplication(){
